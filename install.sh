@@ -5,7 +5,7 @@
 #   Description: install or update sprov-ui
 #   Author: sprov
 #   Blog: https://blog.sprov.xyz
-#   Github - sprov-ui: https://github.com/yuyeah/sprov-ui
+#   Github - sprov-ui: https://github.com/mikewubox/sprov-ui
 #=================================================
 
 #       ┏┓    ┏┓  + +
@@ -227,7 +227,7 @@ install_sprov-ui() {
     if [[ -f "/usr/local/sprov-ui/sprov-ui.war" ]]; then
         rm /usr/local/sprov-ui/sprov-ui.war -f
     fi
-    last_version=$(curl --silent "https://api.github.com/repos/yuyeah/sprov-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+    last_version=$(curl --silent "https://api.github.com/repos/mikewubox/sprov-ui/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     echo -e "检测到sprov-ui最新版本：${last_version}，开始下载核心文件"
     wget -N --no-check-certificate -O /usr/local/sprov-ui/sprov-ui.jar https://github.com/yuyeah/sprov-ui/releases/download/${last_version}/sprov-ui-${last_version}.jar
     if [[ $? -ne 0 ]]; then
