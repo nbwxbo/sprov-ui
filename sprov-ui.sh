@@ -155,7 +155,7 @@ update() {
         return 0
     fi
     install_base
-    bash <(curl -L -s https://github.com/yuyeah/sprov-ui/raw/master/install.sh)
+    bash <(curl -L -s https://github.com/mikewubox/sprov-ui/raw/master/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             restart
@@ -326,7 +326,7 @@ show_log() {
 }
 
 install_bbr() {
-    bash <(curl -L -s https://github.com/yuyeah/sprov-ui/raw/master/bbr.sh)
+    bash <(curl -L -s https://github.com/mikewubox/sprov-ui/raw/master/bbr.sh)
     if [[ $? == 0 ]]; then
         echo ""
         echo -e "${green}安装 bbr 成功${plain}"
