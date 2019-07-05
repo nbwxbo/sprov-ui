@@ -45,6 +45,15 @@ https://blog.sprov.xyz/2019/02/09/sprov-ui/
 - Ubuntu 18
 - Debian 8
 - Debian 9
+确认系统已经安装 Curl,sudo,yum，否则请安装一下才能继续
+安装CURL
+apt-get update -y && apt-get install curl -y
+
+安装sudo
+apt-get install sudo
+
+安装yum
+apt-get install yum
 
 # 一键安装&升级面板
 
